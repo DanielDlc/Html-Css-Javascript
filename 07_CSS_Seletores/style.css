@@ -1,0 +1,33 @@
+/* modificando arquivo index.html */
+
+/* modificar o parágrafo <p> com ID*/
+#utilizando_id{  
+    color:chocolate;
+}
+
+/* modificar cor utilizando class */
+.usando_class{
+    color:blue;
+}
+
+/* Utilizando div para modificar um texto até o final da linha */
+div{
+    background:salmon;
+}
+
+/* utilizando * para modificar o site inteiro (neste caso utilizei para maiúsculo */
+* {
+    text-transform: uppercase;
+}
+
+/* Pseudo class :hover (quando passamos o mouse por cima) */
+.usando_hover:hover {
+    font-size: 20px;
+    color: red;
+}
+
+/* :visited serve para marcar um site como visto (cor roxa exemplo google) */
+a:visited {
+    
+    color: darkmagenta;
+}
