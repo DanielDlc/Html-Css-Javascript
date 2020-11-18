@@ -1,0 +1,25 @@
+/* usando padrão com apenas o nome da cor azul*/
+.principal {
+    color: blue
+}
+
+/* usando padrão rgb ded 0 até 255 */
+#primeiro_rgb {
+    color: rgb(57, 200, 0);
+}
+
+/* usando rgba o ultimo algarismo vai de 0 até 1 (sendo 1 padrão mais claro) */
+#usando_rgba {
+    color: rgba(255, 200, 100, 0.7)
+}
+
+/* usando hexadecimal */
+.cor_hex {
+    color:#6272a4
+}
+
+
+/* usando mais um tipo de cor em hex*/
+.outro_hex {
+    color:#ff79c6
+}
