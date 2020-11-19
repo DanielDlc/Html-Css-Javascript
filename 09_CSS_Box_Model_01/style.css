@@ -1,0 +1,48 @@
+/*
+    text-align: center é útil para alinhar o texto no centro da página
+    width: alinha ao centro 
+    height: definir altura
+    margin: para centralizar 
+    background: utilizado para visualizar a caixa
+*/
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background: #f8f8f2;
+}
+
+/* 
+    largura de 200px e altura de 80px 
+    border-bottom representa borda em baixo sólida com a cor preta
+*/
+.box-1 {
+    width: 200px;
+    height: 80px;
+    background: #6272a4;
+    padding: 10px 20px;
+    border-bottom: 10px solid #ff79c6;
+    margin: 10px 20px;
+}
+
+.box-2 {
+    width: 200px;
+    height: 80px;
+    background: #6272a4;
+    padding: 10px 20px;
+    border-bottom: 10px solid #ff79c6;
+    margin: 30px 20px;
+}
+
+.box-3 {
+    width: 200px;
+    height: 80px;
+    background: #6272a4;
+    padding: 10px 20px;
+    border-bottom: 10px solid #ff79c6;
+    margin: 30px 20px;
+}
