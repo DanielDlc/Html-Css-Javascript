@@ -1,0 +1,37 @@
+/* 
+testar cor do background no body .
+colocando imagem de um castelo no background .
+no-repeat é funcional para a imagem não se repetir.
+attachment: fixed serve para a imagem não descer junto com o deslocamento da página.
+position: center é para deixar a imagem centralizada.
+size: cover serve para colocar a foto inteira mantendo as proporções
+*/
+body {
+    background-color: #333;
+    background-image: url(castelo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:5000px;
+}
+
+/* 
+background-color serve para mudar cor do background  
+box-shadow 0 0 10px cor serve para sombra interna
+visibility: hidden; para ocultar o elemento 
+display: none; funcional para slides pois oculta um elemento e mostra o outro.
+*/
+div {
+    text-align: center;
+    color:#ff79c6;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto; 
+    /* background-color: #ccc; */
+    background-image: url(castelo_2.png);
+    background-size: cover;
+    box-shadow: 0 10px 10px #000;
+    /* visibility: hidden; */
+    /* display: none; */
+}
