@@ -1,0 +1,11 @@
+body {
+    color: blue;
+}
+
+.classe {
+    color: cadetblue;
+    font-size: xx-large;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
