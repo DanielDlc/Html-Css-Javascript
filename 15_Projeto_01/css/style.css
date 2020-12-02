@@ -1,0 +1,57 @@
+/* Estilos Gerais */
+/* colocar fonte padrão */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header  */
+/* width para deixar a tela inteira com background desejado 
+padding para não deixar colado no topo
+position: fixes para scroll não descer o header e no topo com top: 0 
+*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fec63e;
+    padding: 15px 0;
+}
+
+/* eitar menu text alinhado a direita*/
+.header_menu {
+    text-align: right;
+}
+
+/* modificar elemento de bloco (deixar quebrar linha tranformando
+li em um elemento  inline)
+espaçamento com margin para esquerda
+margin-top colocar na estrutura de navegação para descer um pouco o menu
+*/
+.header_menu ul li{
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+/* Estilizar cor da tipografia 
+font-wight bold "Negrito" e uppercase para letras maiúsculas
+letter-spacing para o espaçamento entre as letras
+melhorar a área de contato com padding
+*/
+.header_menu ul li a{
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0;
+    /* background: salmon; mostrar área de contato */
+}
+
+/* passar o mouse por cima e identificar que pode clicar */
+.header_menu ul li a:hover {
+    color: #FFF;
+}
+
+/* Introdução */
