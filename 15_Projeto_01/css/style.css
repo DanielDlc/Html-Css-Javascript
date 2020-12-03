@@ -30,6 +30,32 @@ p {
 
 }
 
+/* modificar a cor do btn em baixo dos consoles / bicicleta */
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.subtitulo {
+    font-size: 24x;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;  /* descer as biciletas/ consoles */
+
+}
+
+.subtitulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000; /* após escolher a cor aparece as linhas*/
+    margin: 8px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
+}
 
 /* Header  */
 /* width para deixar a tela inteira com background desejado 
@@ -42,6 +68,7 @@ position: fixes para scroll não descer o header e no topo com top: 0
     width: 100%;
     background: #fec63e;
     padding: 15px 0;
+    z-index: 10; /* para o elemento não ficar por cima */
 }
 
 /* eitar menu text alinhado a direita*/
@@ -54,7 +81,7 @@ li em um elemento  inline)
 espaçamento com margin para esquerda
 margin-top colocar na estrutura de navegação para descer um pouco o menu
 */
-.header_menu ul li{
+.header_menu ul, li{
     display: inline-block;
     margin-left: 25px;
     margin-top: 20px;
@@ -65,7 +92,7 @@ font-wight bold "Negrito" e uppercase para letras maiúsculas
 letter-spacing para o espaçamento entre as letras
 melhorar a área de contato com padding
 */
-.header_menu ul li a{
+.header_menu ul, li a{
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
@@ -128,4 +155,57 @@ melhorar a área de contato com padding
     font-weight: bold;
     font-size: 14px;
     letter-spacing: .1em;
+}
+
+/* Produtos */
+.produtos {
+    padding: 60px 0;
+}
+
+/* Fundo amarelo da bicicleta */
+.produtos_lista li {
+    background: #fec63e;  /* modificar cor de fundo amarelo */
+    text-align: center;  /* alinhar o texto ao centro */
+}
+
+.produtos_lista li h3{
+    font-weight: bold;  /* Negrito */
+    font-size: 18px;  /* tamanho da fonte */
+    line-height: 25px;  /* altura da linha */
+    text-transform: uppercase;  /* tudo em maiúsculo */
+    letter-spacing: .1em;  /* espaçamento entre as letras */
+    margin-top: 20px;
+}
+
+/* colocar linha abaixo do PASSEIO */
+.produtos_lista l1, h3::after {  /* precisa colocar virgula para separar l1, h3*/
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000; /* após escolher a cor aparece as linhas*/
+    margin: 2px auto; 
+}
+
+/* modificar a tipografia dando um respiro */
+.produtos_lista l1, p {
+    padding: 10px 20px 20px 20px;
+}
+/* Fundo preto da bicicleta */
+.produtos_icone {
+    background: #000;
+    padding: 20px;
+}
+
+/* Ajustar produto abaixo da bicicleta / console */
+.call {
+    padding-top: 40px;
+    text-align: center;
+    /* background: blue;   (útil para verificar o espaço verificado com float)*/
+    clear: both;  /* remover float do elemento acima*/
+}
+
+/* descer o botão um pouco */
+.call p{
+    margin-bottom: 20px;
 }
