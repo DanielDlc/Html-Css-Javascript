@@ -11,6 +11,12 @@ p {
     line-height: 20px;
 }
 
+/* criar estilo para todas imagens se comportarem como elemento de bloco */
+/* display block retira a margem de baixo para facilitar o trabalho  */
+img {
+    display: block;
+}
+
 /* organizar estilo do site */
 .btn {
     border: 3px solid #fec63e;
@@ -114,7 +120,7 @@ melhorar a área de contato com padding
     height: 380px;
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
-    margin-top: 96px; 
+    margin-top: 92px; 
     text-align: center;
     padding-top: 80px;
 }
@@ -178,7 +184,7 @@ melhorar a área de contato com padding
 }
 
 /* colocar linha abaixo do PASSEIO */
-.produtos_lista l1, h3::after {  /* precisa colocar virgula para separar l1, h3*/
+.produtos_lista l1 h3::after {  /* precisa colocar virgula para separar l1, h3*/
     content: "";
     display: block;
     width: 60px;
@@ -208,4 +214,170 @@ melhorar a área de contato com padding
 /* descer o botão um pouco */
 .call p{
     margin-bottom: 20px;
+}
+
+/* criando portfólio */
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+}
+
+/*
+Pegar o sub-título e pintar de amarelo 
+O subtitulo que estiver dentro do portfólio 
+*/
+.portfolio .subtitulo {
+    color: a#fec63e;
+}
+
+/* traço para separar em baixo :after */
+.portfolio .subtitulo::after {
+    background: a#fec63e;
+}
+
+/* espaçar o portfólio */
+.produtos_lista li:last-child {
+    margin-top: 20px;
+}
+
+/* mudar para branco o nome acima do portfólio */
+.call p {
+    color: #FFF;
+}
+
+/* Iniciando Qualidade */
+.qualidade {
+    padding: 60px 0;
+
+}
+
+/* Criar linhas dentro de qualidade (arquivo img linhas) */
+/* 
+pseudo-element after 
+width de acordo com a imagem, possui uma largura de 634px
+e altura 83px,  posicionar Horizontal & Vertical com position absolute
+background: url (../ dois pontos seguido de barra volta um direttório) 
+*/
+.qualidade:after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.png") no-repeat center ;
+    position: absolute;
+    top: 210px;
+    right: 162px;
+    z-index: -1;  /* garantir que fique sempre por trás de tudo */
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+/* Estilizar a lista de Qualidade */
+.qualidade_lista li h3{
+    font-weight: bold;  /* Negrito */
+    font-size: 18px;  /* tamanho da fonte */
+    line-height: 25px;  /* altura da linha */
+    text-transform: uppercase;  /* tudo em maiúsculo */
+    letter-spacing: .1em;  /* espaçamento entre as letras */
+    margin-top: 20px;
+}
+
+/* colocar linha abaixo do PASSEIO */
+.qualidade_lista l1, h3::after {  /* precisa colocar virgula para separar l1, h3*/
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000; /* após escolher a cor aparece as linhas*/
+    margin: 6px auto; 
+}
+
+/* Quebra */
+.quebra {
+    width: 100%;
+    height: 220px;
+    background: url(../img/bg-footer.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;    
+}
+
+/* quebrar em duas linhas */
+.quebra .quote-externo {
+    max-width: 400px;
+}
+
+/* Footer iniciand rodapé */
+.footer {
+    width: 100%;
+    background: #000000;
+    color: #FFF;
+    padding: 20px 0px;
+}
+
+/* história, contato e redes */
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+/* traço em baixo de nossa história, contato e redes */
+.footer h3::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    display: block;
+    background: #fec63e;
+    margin: 6px 0 12px 0;
+}
+
+  
+.footer_historia {
+    padding-right: 40px;
+    /* background: #fe2a3e; linha comentada pois foi útil para verificar tamanho do texto */
+   
+}
+
+/* colocar estilo no texto */
+.footer_contato ul li {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 4px;
+    font-size: 16px;
+    padding-right: 20px;
+    margin-left: 1px;
+}
+
+.footer_redes ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* colocando borda de 3px, deixando display block e um padding 3px */
+.footer_redes ul li a {
+    border: 3px solid #fec63e;  
+    display: block;
+    padding: 3px;
+}
+
+/* modificar a borda para branco para saber que é clicável */
+.footer_redes ul li a:hover {
+    border-color: #FFF;
+}
+
+/* Final da página inicial */
+.copy {
+    width: 100%;
+    background: #fec63e;
+    padding: 2px 0;
 }
