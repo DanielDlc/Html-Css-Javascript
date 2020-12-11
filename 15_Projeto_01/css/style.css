@@ -19,9 +19,9 @@ img {
 
 /* organizar estilo do site */
 .btn {
-    border: 3px solid #fec63e;
+    border: 3px solid  #FFA19A;
     padding: 10px 30px;
-    color: #fec63e;
+    color: #FFA19A;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -72,7 +72,7 @@ position: fixes para scroll não descer o header e no topo com top: 0
     position: fixed;
     top: 0;
     width: 100%;
-    background: #fec63e;
+    background: #4B22AA;
     padding: 15px 0;
     z-index: 10; /* para o elemento não ficar por cima */
 }
@@ -137,7 +137,7 @@ melhorar a área de contato com padding
     max-width: 320px;
     margin: 0 auto;
     margin-bottom: 40px;
-    color: #FFF;
+    color: #4B22AA;
 }
 
 .quote-externo p {
@@ -151,7 +151,7 @@ melhorar a área de contato com padding
     display: block;
     width: 60px;
     height: 3px;
-    background: #FFF; /* após escolher a cor aparece as linhas*/
+    background: #4B22AA; /* após escolher a cor aparece as linhas*/
     margin: 14px auto 10px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
 }
 
@@ -170,7 +170,7 @@ melhorar a área de contato com padding
 
 /* Fundo amarelo da bicicleta */
 .produtos_lista li {
-    background: #fec63e;  /* modificar cor de fundo amarelo */
+    background: #4B22AA;  /* modificar cor de fundo amarelo */
     text-align: center;  /* alinhar o texto ao centro */
 }
 
@@ -228,12 +228,12 @@ Pegar o sub-título e pintar de amarelo
 O subtitulo que estiver dentro do portfólio 
 */
 .portfolio .subtitulo {
-    color: a#fec63e;
+    color: a#4B22AA;
 }
 
 /* traço para separar em baixo :after */
 .portfolio .subtitulo::after {
-    background: a#fec63e;
+    background: a#4B22AA;
 }
 
 /* espaçar o portfólio */
@@ -318,7 +318,7 @@ background: url (../ dois pontos seguido de barra volta um direttório)
 .footer {
     width: 100%;
     background: #000000;
-    color: #FFF;
+    color: #4B22AA;
     padding: 20px 0px;
 }
 
@@ -326,7 +326,7 @@ background: url (../ dois pontos seguido de barra volta um direttório)
 .footer h3 {
     font-size: 18px;
     line-height: 25px;
-    color: #fec63e;
+    color: #4B22AA;
     text-transform: uppercase;
     letter-spacing: .1em;
     font-weight: bold;
@@ -338,7 +338,7 @@ background: url (../ dois pontos seguido de barra volta um direttório)
     width: 40px;
     height: 4px;
     display: block;
-    background: #fec63e;
+    background: #4B22AA;
     margin: 6px 0 12px 0;
 }
 
@@ -365,7 +365,7 @@ background: url (../ dois pontos seguido de barra volta um direttório)
 
 /* colocando borda de 3px, deixando display block e um padding 3px */
 .footer_redes ul li a {
-    border: 3px solid #fec63e;  
+    border: 3px solid #4B22AA;  
     display: block;
     padding: 3px;
 }
@@ -378,6 +378,6 @@ background: url (../ dois pontos seguido de barra volta um direttório)
 /* Final da página inicial */
 .copy {
     width: 100%;
-    background: #fec63e;
+    background: #4B22AA;
     padding: 2px 0;
 }
