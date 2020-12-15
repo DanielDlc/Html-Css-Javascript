@@ -19,9 +19,9 @@ img {
 
 /* organizar estilo do site */
 .btn {
-    border: 3px solid  #FFA19A;
+    border: 3px solid  #4B22AA; /* cor da borda de (orçamento, produto, portfólio e sobre)*/
     padding: 10px 30px;
-    color: #FFA19A;
+    color: #4B22AA; /* cores das letras de (orçamento, produto, portfólio e sobre)*/
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -63,6 +63,27 @@ img {
     margin: 8px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
 }
 
+/* Modificando (Sobre do site) */
+.subtitulo-interno {
+    font-size: 24x;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;  /* descer o texto consoles */
+
+}
+
+.subtitulo-interno::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000; /* após escolher a cor aparece as linhas*/
+    margin: 8px 0;  /* alinha a margem a esquerda quando utilizamos zero */
+}
+
 /* Header  */
 /* width para deixar a tela inteira com background desejado 
 padding para não deixar colado no topo
@@ -77,12 +98,12 @@ position: fixes para scroll não descer o header e no topo com top: 0
     z-index: 10; /* para o elemento não ficar por cima */
 }
 
-/* eitar menu text alinhado a direita*/
+/* editar menu texto alinhado a direita*/
 .header_menu {
     text-align: right;
 }
 
-/* modificar elemento de bloco (deixar quebrar linha tranformando
+/* modificar elemento de bloco (deixar quebrar linha transformando
 li em um elemento  inline)
 espaçamento com margin para esquerda
 margin-top colocar na estrutura de navegação para descer um pouco o menu
@@ -114,6 +135,11 @@ melhorar a área de contato com padding
     color: #FFF;
 }
 
+/* Menu ativo dentro de sobre (fica na cor rosa mostrando ativo */
+.header_menu ul li a.menu_ativo {
+    color: #FFA19A;
+}
+
 /* Introdução */
 .introducao {
     width: 100%;
@@ -137,7 +163,7 @@ melhorar a área de contato com padding
     max-width: 320px;
     margin: 0 auto;
     margin-bottom: 40px;
-    color: #4B22AA;
+    color: #fff;
 }
 
 .quote-externo p {
@@ -151,7 +177,7 @@ melhorar a área de contato com padding
     display: block;
     width: 60px;
     height: 3px;
-    background: #4B22AA; /* após escolher a cor aparece as linhas*/
+    background: #FFF; /* após escolher a cor aparece as linhas*/
     margin: 14px auto 10px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
 }
 
@@ -161,6 +187,34 @@ melhorar a área de contato com padding
     font-weight: bold;
     font-size: 14px;
     letter-spacing: .1em;
+}
+
+/* Sobre inicia aqui */
+/* Estilo Introdução interna */
+.introducao-interna {
+    width: 100%;
+    margin-top: 93px;
+    height: 160px;
+    background-size: cover;
+    text-align: center; /* deixar tudo alinhado ao centro */
+    color: #FFF; 
+    padding-top: 30px; /* deixar texto sobre um pouco para baixo */
+} 
+
+.introducao-interna h1 { 
+    font-size: 36px; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Criar separador */
+.introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFF; /* após escolher a cor aparece as linhas*/
+    margin: 6px auto 10px auto;  /* alinhar cima 10px, direita auto, baixo 10px esquerda auto */
 }
 
 /* Produtos */
@@ -275,6 +329,11 @@ background: url (../ dois pontos seguido de barra volta um direttório)
     margin: 0 auto;
 }
 
+.qualidade_lista {
+    padding-top: 20px;
+    overflow: auto;  /* Clear-fix limpa a flutuação da parte qualidade dentro de sobre*/
+}
+
 .qualidade_lista li {
     text-align: center;
     padding: 0 40px;
@@ -380,4 +439,4 @@ background: url (../ dois pontos seguido de barra volta um direttório)
     width: 100%;
     background: #4B22AA;
     padding: 2px 0;
-}
+}header
