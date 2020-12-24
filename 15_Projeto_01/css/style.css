@@ -137,7 +137,7 @@ melhorar a área de contato com padding
 
 /* Menu ativo dentro de sobre (fica na cor rosa mostrando ativo */
 .header_menu ul li a.menu_ativo {
-    color: #FFA19A;
+    /* color: #a1d3a1;   Cor da marcação do Sobre */
 }
 
 /* Introdução */
@@ -195,7 +195,6 @@ melhorar a área de contato com padding
     width: 100%;
     margin-top: 93px;
     height: 160px;
-    background-size: cover;
     text-align: center; /* deixar tudo alinhado ao centro */
     color: #FFF; 
     padding-top: 30px; /* deixar texto sobre um pouco para baixo */
