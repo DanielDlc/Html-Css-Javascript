@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document - Sobre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivos de link estão separados somente para organizar!
+        após concluir irei comentar e juntar todos arquivos CSS. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body> 
+    <header class="header">
+        <div class="container">
+            <a href="index.html"class="grid-4">
+                <img src="img/AD Trade.png" alt="Bikcraft"> 
+            </a>
+            
+            <!-- tag estrutural da navegação -->
+            <nav class="grid-12 header_menu">
+                <ul>
+                    <li><a href="sobre.html" class="menu_ativo">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header> 
+
+    <section class="introducao-interna interna_produtos">
+        <div class="container">
+            <h1>Jogos</h1>
+            <p>Conheça todos os nossos Jogos</p>
+        </div>    
+    </section> 
+
+    <!-- Iniciando as imagens abaixo de Jogos -->
+    <section class="container produto_item">
+
+        <!-- duas meninas de bicicleta -->
+        <div class="grid-11">
+            <img src="img//produtos/bikcraft-passeio-1.jpg"
+            alt="Bikcraft passeio">
+            <h2>passeio</h2>
+        </div>
+        
+        <!-- bicicleta pequena amarela com o mesmo formato da foto -->
+        <div class="grid-5 produto-passeio">
+            <img src="img/produtos/passeio.png">
+            alt="bikcraft passeio"></div>
+         
+        <!-- Bicicleta azul com banco branco  -->
+        <div class="grid-8">
+            <img src="img/produtos/bikcraft-passeio-2.jpg" 
+            alt="bikcraft passeio"></div>
+
+        <!-- texto ao lado da bicicleta azul -->
+        <div class="grid-8 produto_info">
+            <p>No mundo atual, a contínua expansão de nossa atividade cumpre um
+            papel essencial na formula da gestão inovadora da qual fazemos parte
+            "inovadora da qual fazemos parte"
+            </p>
+        <!-- lista de itens -->
+            <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+            </ul>
+        </div>
+    </section>
+
+     <!-- primeira section duplicada e início de esporte -->
+     <section class="container produto_item">
+
+        <!-- bicicleta vermelha com nome Esporte no meio -->
+        <div class="grid-11">
+            <img src="img//produtos/bikcraft-esporte-1.jpg"
+            alt="Bikcraft esporte">
+            <h2>esporte</h2>
+        </div>
+        
+        <!-- bicicleta pequena amarela com o mesmo formato da foto -->
+        <div class="grid-5 produto-icone">
+            <img src="img/produtos/esporte.png" 
+            alt="bikcraft esporte"></div>
+         
+        <!-- Bicicleta preta com banco preto  -->
+        <div class="grid-8">
+            <img src="img/produtos/bikcraft-esporte-2.jpg" 
+            alt="bikcraft esporte"></div>
+
+        <!-- texto ao lado da bicicleta preta -->
+        <div class="grid-8 produto_info">
+            <p>No mundo atual, a contínua expansão de nossa atividade cumpre um
+            papel essencial na formula da gestão inovadora da qual fazemos parte
+            "inovadora da qual fazemos parte"
+            </p>
+        <!-- lista de itens -->
+            <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+            </ul>
+        </div>
+    </section>
+     <!-- primeira duplicada final -->
+
+    <!-- segunda duplicada de section retro-->
+     <!-- Iniciando as imagens abaixo de Jogos -->
+     <section class="container produto_item">
+
+        <!-- bicicleta com cestinha na parte de trás -->
+        <div class="grid-11">
+            <img src="img//produtos/bikcraft-retro-1.jpg"
+            alt="Bikcraft Retro">
+            <h2>retro</h2>
+        </div>
+        
+        <!-- bicicleta pequena amarela com o mesmo formato da foto -->
+        <div class="grid-5 produto-icone">
+            <img src="img/produtos/retro.png" 
+            alt="bikcraft retro"></div>
+         
+        <!-- duas bicicleta azul com banco preto  -->
+        <div class="grid-8">
+            <img src="img/produtos/bikcraft-retro-2.jpg" 
+            alt="bikcraft retro"></div>
+
+        <!-- texto ao lado da bicicleta azul -->
+        <div class="grid-8 produto_info">
+            <p>No mundo atual, a contínua expansão de nossa atividade cumpre um
+            papel essencial na formula da gestão inovadora da qual fazemos parte
+            "inovadora da qual fazemos parte"
+            </p>
+        <!-- lista de itens -->
+            <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+            </ul>
+        </div>
+    </section>
+    <!-- segunda duplicada final -->
+
+    <!-- Iniciando Orçamento (parte final do site) -->
+    <section class="orcamento">
+        <div class="container">
+            <h2 class="subtitulo">Orçamento</h2>
+            <form id="form_orcamento" class="form grid-8">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="email">E-mail</label>
+                <input type="text" id="nome">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="nome">
+                <label for="espec">Especificações</label>
+                <textarea id="espec"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="orcamento_dados grid-8">
+                <h3>Dados</h3>
+                <span>+55 21 99918 3939</span>
+                <span class="dados_email">orcamento@adbuild.com</span>
+                <h3>Compre suas moedas</h3>
+                <ul>
+                    <li>PC Gamer</li>
+                    <li>Lineage 2 e Cabal Online</li>
+                    <li>Playstation</li>
+                    <li>Final fantasy 14 e Black Desert</li>
+                    <li>Xbox</li>
+                    <li>Neverwinter e The Elder Scrolls</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Início Section (Rodapé) -->
+    <section class="quebra">
+        <blockquote class="quote-externo container">
+            <p>"voce pode não ter tempo para 'farmar' no jogo mas sempre conseguirá seus itens 'farmando' no mundo real"</p>
+            <cite>Daniel Sharmeiro</cite>
+        </blockquote>
+    </section>
+
+    <footer>
+        <div class="footer">  <!-- classe para pegar fundo preto-->
+            <div class="container">  <!-- container para segurar os blocos com grid-->
+
+                <div class="grid-8 footer_historia">
+                    <h3>Nossa História</h3>
+                    <p>O fluxo do tempo é sempre cruel, sua velocidade parece diferente para cada pessoa,
+                     mas ninguém pode mudá-la. Uma coisa que não muda com o tempo é a memória dos dias mais jovens.</p>
+                </div>
+
+                <div class="grid-4 footer_contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>- 21 99918-3939</li>
+                        <li>- contato@dltrade.com</li>
+                        <li>- Rio de janeiro </li>
+                    </ul>
+                </div>
+
+                <div class="grid-4 footer_redes">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="http://facebook.com" target="_blank"><img src="img/facebook.png"></a></li>
+                        <li><a href="http://instagram.com" target="_blank"><img src="img/instagram.png"></a></li>
+                        <li><a href="http://twitter.com" target="_blank"><img src="img/twitter.png"></a></li>
+                    </ul>
+                </div>
+
+            </div>  <!-- final da div container -->
+        </div>
+
+        <!-- Final da página copyright  -->
+        <div class="copy">
+            <div class="container">
+                <p class="grid-16">ADTrade 2020- Alguns direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>,
