@@ -1,0 +1,208 @@
+/* modificar foto  */
+.interna_produtos {
+    background: url("../img/produtos/bg-produtos.jpg")no-repeat center;
+    background-size: cover;
+}  
+
+/* definindo a distância entre os produtos */
+.produto_item {
+    padding-top: 60px;  /* distancia entre a meninas de bicicleta e JOGOS */
+}
+
+/* deixar o nome PASSEIO no local, tamanho e cor certa */
+.produto_item h2 {
+    color: #ffffff; /* cor branca do nome passeio */
+    font-size: 36px; /* número do tamanho da fonte passeio */
+    text-transform: uppercase; /* deixar a letra em maiúsculo */
+    letter-spacing: .1em;
+    font-weight: bold; /* deixar a letra em "Negrito Branco" */
+    position: relative;
+    top: -170px; /* subir o nome passeio usando negativo */
+    text-align: center;  /* nome passeio ao centro */
+}
+ 
+/* colocando as barras em cima e em baixo */
+.produto_item h2::after, .produto_item h2::before  {
+    content: "";  /* ativar as barras */
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFF; /* após escolher a cor aparece as linhas*/
+    margin: 6px auto 8px auto; 
+} 
+
+/* modificar tamanho e cor de fundo da bicicleta amarela no formato masseio separado */
+.produto-passeio {
+    background: #000; 
+    padding: 62px 0;
+
+}
+
+/* deixar a imagem no centro */
+.produto-passeio img {
+    margin: 0 auto;
+}
+
+/* modificar tamanho e cor de fundo da bicicleta amarela */
+.produto-icone  {
+    background: #000; 
+    padding: 70px 0;
+
+}
+
+/* deixar a bicicleta alinhado ao centro */
+.produto-icone img {
+    margin: 0 auto;
+}
+
+
+.produto_info {
+    background: #000000;
+}
+
+.produto_info p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold; /* coloquei por minha conta bold na frase */
+    line-height: 25px;
+    height: 140px;  /* alinha a foto a esquerda com o mesmo tamanho das informações ao lado direito */
+    padding: 30px 40px;
+}
+
+/* criando Conforte até versatilidade, porém está ficando maior que o container */
+.produto_info ul li {
+    background: #4B22AA;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    float: left;
+    width: 214px;  /* 214 é o limita, acima disso fica tudo em baixo */
+    height: 49px;
+    text-align: center;
+    padding-top: 16px;
+    margin-bottom: 20px; /* adicionado por minha conta */
+}
+ /* .produto_info ul li:first-child serve para falar com apenas o primeiro elemento */
+.produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2) {
+    margin-bottom: -18px;  /* negativo para juntar as letras  */
+}
+
+/*    
+Evitar a quebra para baixo falando com apenas velocidade e versatilidade 
+odd fala apenas com os impares 1, 3, 5...
+even fala com os pares 2,4, 6...
+*/
+.produto_info ul li:nth-child(even) {
+    margin-left: 2px;
+}
+
+.produto_info ul li:nth-child(odd) {
+    margin-left: 15px;
+}
+
+/* Orçamento início */
+
+.orcamento {
+    background: #000000;
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;  /* espaço entre enviar a final da página no top e em baixo */
+}
+
+.orcamento h2 {
+    color: #4B22AA;
+}
+
+.rcamento h2::after {
+    color: #4B22AA;
+}
+
+ .form {
+     padding-right: 60px;
+ }
+
+ .form label {
+     display: block;  /* Organizar Nome, E-mail, Telefone e Especificações */
+     color: #ffffff; /* modificar o contorno do label */
+     font-family: Georgia, 'Times New Roman', serif;
+     font-size: 18px;
+     line-height: 25px;
+     margin-bottom: 4px;
+ }
+
+ /* Criar margem */
+ .form input {
+    display: block;
+    width: 100%;
+    border: 4px solid #4B22AA;
+    background: none;
+    color: #ffffff;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', serif;
+ }
+
+ /* modificar especificações */
+ .form textarea{
+    display: block;
+    width: 100%;
+    height: 120px;  /* modifica tamanho da altura */
+    border: 4px solid #4B22AA;
+    background: none;
+    color: #ffffff;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', serif;
+ }
+
+ .form button {
+    padding: 7px 40px;
+    background: none;
+ }
+
+ .orcamento_dados {
+     color: #ffffff;
+ }
+
+/* criar estilo para os dados com nome astral diamond */
+ .orcamento_dados h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #4B22AA;
+    font-weight: bold ;
+}
+
+.orcamento_dados span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.dados_email {
+    margin-bottom: 40px;
+}
+
+.orcamento_dados ul {
+    padding-right: 60px;
+}
+
+.orcamento_dados ul li {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.orcamento_dados ul li:nth-child(odd){
+    background: #1d1d1d;
+}
+
+.orcamento_dados p {
+    margin: 8px 0;
+}
