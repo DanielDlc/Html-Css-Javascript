@@ -1,6 +1,7 @@
 /* modificar foto  */
 .interna_sobre {
     background: url("../img/bgsobre.png")no-repeat center;
+    background-size: cover;
 }  
 
 .missao_sobre {

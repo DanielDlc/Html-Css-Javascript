@@ -1,0 +1,31 @@
+/* modificar foto  */
+.interna_portfolio {
+    background: url("../img/bg-portfolio.jpg")no-repeat center;
+    background-size: cover;
+}  
+
+/* definir tamanho básico para o blockquote */
+.quote_clientes {
+    padding: 60px 0;  /* definir espaço entre a bicicleta e os controles */
+    max-width: 460px; /* definir a largura máxima */
+    margin: 0 auto; /* deixar tudo no centro */
+
+}
+
+/* deixar o texto ao centro  */
+.quote_clientes p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman',serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+/* estilizar a citação */
+.quote_clientes cite {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    float: right ;
+    font-style: normal;
+}

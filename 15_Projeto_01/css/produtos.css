@@ -114,7 +114,7 @@ even fala com os pares 2,4, 6...
     color: #4B22AA;
 }
 
-.rcamento h2::after {
+/* .orcamento h2::after { */
     color: #4B22AA;
 }
 
@@ -185,7 +185,7 @@ even fala com os pares 2,4, 6...
     font-family: Georgia, 'Times New Roman', serif;
 }
 
-.dados_email {
+.orcamento_dados span:nth-of-type(2) {
     margin-bottom: 40px;
 }
 
