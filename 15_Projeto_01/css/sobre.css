@@ -1,26 +1,24 @@
-/* modificar foto  */
 .interna_sobre {
-    background: url("../img/bgsobre.png")no-repeat center;
-    background-size: cover;
-}  
-
-.missao_sobre {
-    padding-top: 40px;
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background-size: cover;
 }
 
-.missao_sobre p {
+
+.missao_sobre{
+    padding-top: 60px ;
+}
+.missao_sobre p{
     font-size: 18px;
-    line-height: 25px; 
+    line-height: 25px;
     margin-bottom: 1em;
-    padding-right: 60px;
+    padding-right:60px ;
 }
-
-.missao_sobre ul li {
+.missao_sobre ul li{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    line-height: 30px; 
+    line-height: 30px;
+
 }
-  
-.foto-equipe {
+.foto-equipe{
     padding-top: 20px;
 }

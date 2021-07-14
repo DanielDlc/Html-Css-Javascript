@@ -1,117 +1,174 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>ADTrade - Portfólio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Arquivos de link estão separados somente para organizar!
-        após concluir irei comentar e juntar todos arquivos CSS. -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">  
-    <link rel="stylesheet" href="css/portfolio.css">
+<head>
+    <meta charset="utf-8">
+    <title>Modelo bik - Bicicletas Personalizadas</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portifolio.css" />
+    <link rel="stylesheet" href="css/Responsivo.css" />
+    <script src="js/libs/modernizr.custom.45655.js"></script>
 </head>
+
 <body>
+    <!-- Cabeçalho do site//LOGO//Menu -->
     <header class="header">
         <div class="container">
-            <a href="index.html"class="grid-4">
-                <img src="img/AD Trade.png" alt="ADTrade"> 
+            <a class="grid-4" href="index.html">
+                <img src="img/bikcraft.png" Alt="Bikecraft">
+                <nav class="header_menu grid-12">
             </a>
-            
-            <!-- tag estrutural da navegação -->
-            <nav class="grid-12 header_menu">
-                <ul>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="portfolio.html" class="menu_ativo">Portfólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul> 
+            <ul>
+
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html" class="menu-ativo">Portfólio</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+
+            </ul>
             </nav>
+
+
         </div>
     </header>
 
     <section class="introducao-interna interna_portfolio">
         <div class="container">
-            <h1>Sobre</h1>
-            <p>Conheça Nosso trabalho que amamos mostrar</p>
-        </div>    
-    </section> 
-
-    <!-- Sessão do Blockquote -->
-    <section class="container">
-        <blockquote class="quote_clientes">
-            <p>"No mundo atual, a contínua expansão de nossa atividade cumpre um papel
-                essencial na formulação da gestão inovadora da qual fazemo s parte."</p>
-            <cite>Barbara Moss</cite>
-        </blockquote>
+            <h1>PORTFÓLIO</h1>
+            <p>conheça os projetos que amamos mostrar</p>
+        </div>
     </section>
 
-    <!-- Início copiado do index.html sem h2 e sem o botão-->
-     <!-- Portfólio início -->
-     <section class="portfolio">    
-        <div class="container">
-            <!-- <h2 class="subtitulo">Portfólio</h2> *REMOVIDO-->
-            <ul class="portfolio_lista">
-                <li class="grid-8"><img src="img/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-8"><img src="img/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-16"><img src="img/esporte.jpg" alt="Bicicleta Esporte"></li>
-            </ul>
-            <!-- <div class="call" *REMOVIDO>
-                <p>Conheça mais o nosso portfólio</p>
-                <a href="produtos.html" class="btn">Portfólio</a>
-            </div>  -->
-        </div>
-    </section>  <!-- Fim do Portfólio -->
+    <section class="container animar">
+       <ul class="rslides">
+         <li>
+                <blockquote class="quote-cliente">
+                    <p>
+                        “Não pense na linha de chegada, apenas aprecie o percurso..”
+                    </p>
+                    <cite>
+                        Daniel</cite>
+                </blockquote>
+         </li>
 
-    <!-- Início Section (Rodapé) -->
-    <section class="quebra"> 
-        <blockquote class="quote-externo container">
-            <p>"voce pode não ter tempo para 'farmar' no jogo mas sempre conseguirá seus itens 'farmando' no mundo real"</p>
-            <cite>Daniel Sharmeiro</cite>
+         <li>
+            <blockquote class="quote-cliente">
+                <p>
+                    “Leve seu limite para pedalar com você em busca de algum lugar novo.”
+                </p>
+                <cite>
+                    DanielDlc</cite>
+            </blockquote>
+     </li>
+
+     <li>
+        <blockquote class="quote-cliente">
+            <p>
+                “É proibido desistir. Respire fundo e continue!.”
+            </p>
+            <cite>
+                Daniel Louro Costa</cite>
         </blockquote>
+ </li>
+       </ul>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <ul class="portfolio-lista rslides-portfolio">
+            <li>
+               
+                <div class="grid-8">
+                    <img src="img/portfolio/retro.jpg" Alt="Bikecraft Retro">
+                </div>
+
+                <div class="grid-8">
+                    <img src="img/portfolio/passeio.jpg" Alt="Bikecraft Passeio">
+                </div>
+
+                <div class="grid-16">
+                    <img src="img/portfolio/esporte.jpg" Alt="Bikecraft Esporte">
+
+                </div>
+            </li>
+
+            <li>
+                
+
+                <div class="grid-8">
+                    <img src="img/portfolio/passeio.jpg" Alt="Bikecraft Passeio">
+                </div>
+                
+                <div class="grid-8">
+                    <img src="img/portfolio/retro.jpg" Alt="Bikecraft Retro">
+                </div>
+
+
+                <div class="grid-16">
+                    <img src="img/portfolio/esporte.jpg" Alt="Bikecraft Esporte">
+
+                </div>
+            </li>
+        </ul>
+        </div>
+
+    </section>
+
+
+    <section class="quebra">
+
+        <blockquote class="quote-externo container">
+            <p>"o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                cotidiana."</p>
+            <cite>DANIEL LOURO COSTA</cite>
+        </blockquote>
+
     </section>
 
     <footer>
-        <div class="footer">  <!-- classe para pegar fundo preto-->
-            <div class="container">  <!-- container para segurar os blocos com grid-->
+        <div class="footer">
+            <div class="container">
 
                 <div class="grid-8 footer_historia">
-                    <h3>Nossa História</h3>
-                    <p>O fluxo do tempo é sempre cruel, sua velocidade parece diferente para cada pessoa,
-                     mas ninguém pode mudá-la. Uma coisa que não muda com o tempo é a memória dos dias mais jovens.</p>
+                    <h3>Nossa historia</h3>
+                    <p>Quando iniciamos o modelo de site bik, queríamos apenas um produto que adoraríamos utilizar. Eramos
+                        apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu
+                        um sonho na garagem da nossa casa.</p>
                 </div>
 
                 <div class="grid-4 footer_contato">
+
                     <h3>Contato</h3>
                     <ul>
-                        <li>- 21 99918-3939</li>
-                        <li>- contato@dltrade.com</li>
-                        <li>- Rio de janeiro </li>
+                        <li>- 21 9991-83939</li>
+                        <li>- dlc.engcomputacao@gmail.com</li>
+                        <li>- Ipanema - RJ</li>
                     </ul>
                 </div>
 
-                <div class="grid-4 footer_redes">
-                    <h3>Redes Sociais</h3>
-                    <ul>
-                        <li><a href="http://facebook.com" target="_blank"><img src="img/facebook.png"></a></li>
-                        <li><a href="http://instagram.com" target="_blank"><img src="img/instagram.png"></a></li>
-                        <li><a href="http://twitter.com" target="_blank"><img src="img/twitter.png"></a></li>
-                    </ul>
-                </div>
-
-            </div>  <!-- final da div container -->
+            </div>
         </div>
-
-        <!-- Final da página copyright  -->
         <div class="copy">
             <div class="container">
-                <p class="grid-16">ADTrade 2020- Alguns direitos reservados.</p>
+                <p class="grid-16">
+                    Modelo de site bik 2021 - Alguns direitos reservados.
+                </p>
             </div>
         </div>
     </footer>
+    <!-- JavaScript -->
+    <script src="js/libs/jquery-1.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JavaScript -->
 
-
+    <script>
+        $(function() {
+          $(".rslides").responsiveSlides();
+        });
+      </script>
 </body>
-</html>,
+
+</html>

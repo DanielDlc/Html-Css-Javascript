@@ -1,186 +1,161 @@
-/* Estilos Gerais */
-/* colocar fonte padrão */
-body {
+/* Formatações Gerais */
+Body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* colocar fonte padrão */
 p {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     line-height: 20px;
 }
 
-/* criar estilo para todas imagens se comportarem como elemento de bloco */
-/* display block retira a margem de baixo para facilitar o trabalho  */
-img {
-    display: block;
-}
-
-/* organizar estilo do site */
 .btn {
-    border: 3px solid  #4B22AA; /* cor da borda de (orçamento, produto, portfólio e sobre)*/
+    border: 3px solid #fec63e;
     padding: 10px 30px;
-    color: #4B22AA; /* cores das letras de (orçamento, produto, portfólio e sobre)*/
+    color: #fec63e;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: .1em;
+    font-weight: bold;
+    transition: all .5s ease-in;
 }
 
-/* mudar para branco a cor do ORÇAMENTO ao passsar o cursor por cima */
 .btn:hover {
-    color: #FFF;
-    border-color: #FFF;
-
+    color: rgb(223, 219, 219);
+    border-color: whitesmoke;
 }
 
-/* modificar a cor do btn em baixo dos consoles / bicicleta */
-.btn-preto:hover {
-    color: #000;
-    border-color: #000;
+.btn.btn-black:hover {
+    color: rgb(39, 39, 39);
+    border-color: rgb(90, 84, 84);
 }
 
-.subtitulo {
-    font-size: 24x;
-    line-height: 30px;
+.subtitulos {
     font-weight: bold;
+    font-size: 24px;
     letter-spacing: .1em;
-    color: #000;
+    line-height: 30px;
+    color: black;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 40px;  /* descer as biciletas/ consoles */
-
+    margin-bottom: 40px;
 }
-
-.subtitulo::after {
+/* interno subtitulo */
+.subtitulos:after {
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
-    background: #000; /* após escolher a cor aparece as linhas*/
-    margin: 8px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
+    width: 60px;
+    background: rgb(20, 20, 20);
+    margin: 8px auto;
 }
-
-/* Modificando (Sobre do site) */
-.subtitulo-interno {
-    font-size: 24x;
-    line-height: 30px;
+.subtitulos-interno {
     font-weight: bold;
+    font-size: 24px;
     letter-spacing: .1em;
-    color: #000;
+    line-height: 30px;
+    color: black;
     text-transform: uppercase;
-    margin-bottom: 20px;  /* descer o texto consoles */
-
+    margin-bottom: 20px;
 }
 
-.subtitulo-interno::after {
+.subtitulos-interno:after {
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
-    background: #000; /* após escolher a cor aparece as linhas*/
-    margin: 8px 0;  /* alinha a margem a esquerda quando utilizamos zero */
+    width: 60px;
+    background: rgb(20, 20, 20);
+    margin: 8px 0;
 }
 
-/* Header  */
-/* width para deixar a tela inteira com background desejado 
-padding para não deixar colado no topo
-position: fixes para scroll não descer o header e no topo com top: 0 
-*/
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header */
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #4B22AA;
+    background: #fec63e;
     padding: 15px 0;
-    z-index: 10; /* para o elemento não ficar por cima */
+    z-index: 10;
 }
 
-/* editar menu texto alinhado a direita*/
 .header_menu {
     text-align: right;
+
 }
 
-/* modificar elemento de bloco (deixar quebrar linha transformando
-li em um elemento  inline)
-espaçamento com margin para esquerda
-margin-top colocar na estrutura de navegação para descer um pouco o menu
-*/
-.header_menu ul, li{
+.header_menu ul li {
     display: inline-block;
     margin-left: 25px;
     margin-top: 20px;
+
 }
 
-/* Estilizar cor da tipografia 
-font-wight bold "Negrito" e uppercase para letras maiúsculas
-letter-spacing para o espaçamento entre as letras
-melhorar a área de contato com padding
-*/
-.header_menu ul, li a{
-    color: #000;
+.header_menu ul li a {
+    color: rgb(68, 66, 66);
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-size: 14px;
-    line-height: 20px;
+    line-height: 25px;
     padding: 10px 0;
-    /* background: salmon; mostrar área de contato */
+    transition: all .5s ease-in;
 }
 
-/* passar o mouse por cima e identificar que pode clicar */
 .header_menu ul li a:hover {
-    color: #FFF;
+    color: rgb(255, 255, 255);
 }
-
-/* Menu ativo dentro de sobre (fica na cor rosa mostrando ativo */
-.header_menu ul li a.menu_ativo {
-    color: #a1d3a1;  /* Cor da marcação do Sobre */
+.header_menu ul li a.menu-ativo{
+    color: rgb(255, 255, 255);
 }
 
 /* Introdução */
 .introducao {
-    width: 100%;
     height: 380px;
-    background: url("../img/bg.jpg") no-repeat center;
+    width: 100%;
+    background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
-    margin-top: 92px; 
+    margin-top: 92px;
     text-align: center;
     padding-top: 80px;
 }
 
 .introducao h1 {
     font-size: 48px;
-    color: #FFF;
+    line-height: 60px;
+    color: rgb(250, 249, 249);
     font-weight: bold;
     text-transform: uppercase;
+
 }
 
-/* quebrar o texto sem usar BR */
 .quote-externo {
     max-width: 320px;
     margin: 0 auto;
     margin-bottom: 40px;
-    color: #fff;
+    color: rgb(250, 249, 249);
 }
 
 .quote-externo p {
     font-style: italic;
 }
 
-/* criar separador linhas before (antes)
-   criar separador linhas after  (depois) */
-.quote-externo p::before, .quote-externo p::after {
+.quote-externo p:before,
+.quote-externo p:after {
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
-    background: #FFF; /* após escolher a cor aparece as linhas*/
-    margin: 14px auto 10px auto;  /* alinhar cima 10px, direita auto, baixo 10px e esqueda auto */
-}
+    width: 60px;
+    background: whitesmoke;
+    margin: 14px auto 10px auto;
 
+}
 
 .quote-externo cite {
     font-style: normal;
@@ -189,31 +164,28 @@ melhorar a área de contato com padding
     letter-spacing: .1em;
 }
 
-/* Sobre inicia aqui */
-/* Estilo Introdução interna */
+/* Introdução interna */
 .introducao-interna {
-    width: 100%;
-    margin-top: 93px;
-    height: 160px;
-    text-align: center; /* deixar tudo alinhado ao centro */
-    color: #FFF; 
-    padding-top: 30px; /* deixar texto sobre um pouco para baixo */
-} 
-
-.introducao-interna h1 { 
-    font-size: 36px; 
-    font-weight: bold;
-    text-transform: uppercase;
+	width: 100%;
+	margin-top: 92px;
+	height: 160px;
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+}
+.introducao-interna h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-/* Criar separador */
-.introducao-interna h1::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #FFF; /* após escolher a cor aparece as linhas*/
-    margin: 6px auto 10px auto;  /* alinhar cima 10px, direita auto, baixo 10px esquerda auto */
+.introducao-interna h1:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: white;
+	margin: 6px auto 10px auto;
 }
 
 /* Produtos */
@@ -221,116 +193,105 @@ melhorar a área de contato com padding
     padding: 60px 0;
 }
 
-/* Fundo amarelo da bicicleta */
 .produtos_lista li {
-    background: #4B22AA;  /* modificar cor de fundo amarelo */
-    text-align: center;  /* alinhar o texto ao centro */
+    background: #fec63e;
+    text-align: center;
+
+}
+.produtos_lista li img{
+    margin: 0 auto;
 }
 
-.produtos_lista li h3{
-    font-weight: bold;  /* Negrito */
-    font-size: 18px;  /* tamanho da fonte */
-    line-height: 25px;  /* altura da linha */
-    text-transform: uppercase;  /* tudo em maiúsculo */
-    letter-spacing: .1em;  /* espaçamento entre as letras */
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
     margin-top: 20px;
+
 }
 
-/* colocar linha abaixo do PASSEIO */
-.produtos_lista l1 h3::after {  /* precisa colocar virgula para separar l1, h3*/
+.produtos_lista li h3:after {
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
-    background: #000; /* após escolher a cor aparece as linhas*/
-    margin: 2px auto; 
+    width: 60px;
+    background: rgb(34, 33, 33);
+    margin: 2px auto;
 }
 
-/* modificar a tipografia dando um respiro */
-.produtos_lista l1, p {
-    padding: 10px 20px 20px 20px;
+.produtos_lista li p {
+    padding: 10px 20px 20px 10px;
 }
-/* Fundo preto da bicicleta */
-.produtos_icone {
-    background: #000;
+
+.produtos-icone {
+    background: rgb(34, 33, 33);
     padding: 20px;
+
 }
 
-/* Ajustar produto abaixo da bicicleta / console */
 .call {
+    clear: both;
     padding-top: 40px;
     text-align: center;
-    /* background: blue;   (útil para verificar o espaço verificado com float)*/
-    clear: both;  /* remover float do elemento acima*/
+
 }
 
-/* descer o botão um pouco */
-.call p{
+.call p {
     margin-bottom: 20px;
 }
 
-/* criando portfólio */
+/* Portifolio */
+
 .portfolio {
     width: 100%;
-    background: #000;
+    background: rgb(34, 33, 33);
     padding: 40px 0;
 }
 
-/*
-Pegar o sub-título e pintar de amarelo 
-O subtitulo que estiver dentro do portfólio 
-*/
-.portfolio .subtitulo {
-    color: a#4B22AA;
+.portfolio .subtitulos {
+    color: #fec63e;
 }
 
-/* traço para separar em baixo :after */
-.portfolio .subtitulo::after {
-    background: a#4B22AA;
+.portfolio .subtitulos::after {
+    background: #fec63e;
 }
 
-/* espaçar o portfólio */
-.produtos_lista li:last-child {
+.portfolio-lista div:last-of-type {
     margin-top: 20px;
 }
 
-/* mudar para branco o nome acima do portfólio */
-.call p {
-    color: #FFF;
+.portfolio .call p {
+    color: white;
 }
 
-/* Iniciando Qualidade */
+/* Qualidade*/
+
 .qualidade {
     padding: 60px 0;
-
-}
-
-/* Criar linhas dentro de qualidade (arquivo img linhas) */
-/* 
-pseudo-element after 
-width de acordo com a imagem, possui uma largura de 634px
-e altura 83px,  posicionar Horizontal & Vertical com position absolute
-background: url (../ dois pontos seguido de barra volta um direttório) 
-*/
-.qualidade:after {
-    content: "";
-    width: 634px;
-    height: 83px;
-    display: block;
-    background: url("../img/linhas.png") no-repeat center ;
-    position: absolute;
-    top: 210px;
-    right: 162px;
-    z-index: -1;  /* garantir que fique sempre por trás de tudo */
-}
-
-.qualidade img {
-    margin: 0 auto;
 }
 
 .qualidade_lista {
     padding-top: 20px;
-    overflow: auto;  /* Clear-fix limpa a flutuação da parte qualidade dentro de sobre*/
+    overflow: hidden; /* Clear-fix */
+}
+
+.qualidade:after {
+    content: "";
+    height: 83px;
+    width: 634px;
+    display: block;
+    background: url(../img/linhas.png) no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto;
+   
 }
 
 .qualidade_lista li {
@@ -338,104 +299,141 @@ background: url (../ dois pontos seguido de barra volta um direttório)
     padding: 0 40px;
 }
 
-/* Estilizar a lista de Qualidade */
-.qualidade_lista li h3{
-    font-weight: bold;  /* Negrito */
-    font-size: 18px;  /* tamanho da fonte */
-    line-height: 25px;  /* altura da linha */
-    text-transform: uppercase;  /* tudo em maiúsculo */
-    letter-spacing: .1em;  /* espaçamento entre as letras */
+.qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
     margin-top: 20px;
+
 }
 
-/* colocar linha abaixo do PASSEIO */
-.qualidade_lista l1, h3::after {  /* precisa colocar virgula para separar l1, h3*/
+.qualidade_lista li h3:after {
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
-    background: #000; /* após escolher a cor aparece as linhas*/
-    margin: 6px auto; 
+    width: 60px;
+    background: rgb(34, 33, 33);
+    margin: 6px auto;
 }
 
-/* Quebra */
+/* Rodape */
 .quebra {
-    width: 100%;
     height: 220px;
-    background: url(../img/bg-footer.jpg) no-repeat center;
+    width: 100%;
+    background: url(../img/bg-footer.jpg)no-repeat center;
     background-size: cover;
-    text-align: center;    
+    text-align: center;
+    padding-top: 40px;
+
 }
 
-/* quebrar em duas linhas */
 .quebra .quote-externo {
     max-width: 400px;
 }
 
-/* Footer iniciand rodapé */
 .footer {
     width: 100%;
-    background: #000000;
-    color: #4B22AA;
-    padding: 20px 0px;
+    background: rgb(34, 33, 33);
+    color: white;
+    padding: 20px;
 }
 
-/* história, contato e redes */
 .footer h3 {
     font-size: 18px;
     line-height: 25px;
-    color: #4B22AA;
+    color: #fec63e;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: bold;
 }
 
-/* traço em baixo de nossa história, contato e redes */
 .footer h3::after {
     content: "";
-    width: 40px;
-    height: 4px;
     display: block;
-    background: #4B22AA;
+    height: 3px;
+    width: 60px;
+    background: #fec63e;
     margin: 6px 0 12px 0;
 }
 
-  
 .footer_historia {
     padding-right: 40px;
-    /* background: #fe2a3e; linha comentada pois foi útil para verificar tamanho do texto */
-   
 }
 
-/* colocar estilo no texto */
 .footer_contato ul li {
-    font-family: Georgia, 'Times New Roman', serif;
-    line-height: 4px;
-    font-size: 16px;
-    padding-right: 20px;
-    margin-left: 1px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .footer_redes ul li {
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 10px;
+
 }
 
-/* colocando borda de 3px, deixando display block e um padding 3px */
 .footer_redes ul li a {
-    border: 3px solid #4B22AA;  
+    border: 3PX solid #fec63e;
+    cursor: pointer;
     display: block;
-    padding: 3px;
+    padding: 10px;
+    transition: all .5s ease-in;
 }
 
-/* modificar a borda para branco para saber que é clicável */
+
 .footer_redes ul li a:hover {
-    border-color: #FFF;
+    border-color: rgb(241, 230, 230);
 }
 
-/* Final da página inicial */
 .copy {
     width: 100%;
-    background: #4B22AA;
-    padding: 2px 0;
-}header
+    background: #fec63e;
+    padding: 20px 0;
+}
+
+/* Animações */
+.js .introducao h1,.js .introducao blockquote,.js .introducao  .btn,.js .animar,.js .animar-interno,.js .introducao-interna h1,.js .introducao-interna p{
+    opacity: 0;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+  
+  

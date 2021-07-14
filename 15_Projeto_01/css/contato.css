@@ -1,108 +1,104 @@
-/* modificar foto  */
 .interna_contato {
-    background: url("../img/bg-contato.jpg")no-repeat center;
-    background-size: cover;
+	background: url("../img/bg-contato.jpg") no-repeat center;
+	background-size: cover;
 }
 
-/* Contato início */
-.contato {
-    padding: 40px 0;  /* espaço entre enviar a final da página no top e em baixo */
+
+.contato{
+  
+    padding: 40px 0;
+
 }
 
-.contato_form {
+.form{
     padding-right: 60px;
 }
-
-.contato_form label {
-    display: block;  /* Organizar Nome, E-mail, Telefone e Especificações */
-    font-family: Georgia, 'Times New Roman', serif;
+.contato-form label{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 4px;
+    
 }
-
-/* Criar margem modificando nome, email e telefone */
-.contato_form input {
+.contato-form input{
     display: block;
     width: 100%;
-    border: 4px solid #4B22AA;
+    border: 4px solid #fec63e;
     background: none;
-    padding: 7px 10px;
+    padding: 7px 0;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 10px;
-    outline: none;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', serif;
 }
-
-/* modificar especificações */
-.contato_form textarea{
+.contato-form textarea{
     display: block;
     width: 100%;
-    height: 120px;  /* modifica tamanho da altura */
-    border: 4px solid #4B22AA;
+    height: 120px;
+    border: 4px solid #fec63e;
     background: none;
-    padding: 7px 10px;
-    margin-bottom: 20px; /* modificar de 10 para 20px*/
+    padding: 7px 0;
     outline: none;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
 }
-
-.contato_form button {
-    padding: 7px 40px;
+.contato-form button{
     background: none;
+    padding: 7px 40px;
 }
+.contato-dados{
+    color: rgb(68, 66, 66);
 
-.contato_dados {
-    color: #ffffff;
 }
-
-/* criar estilo para os dados com nome astral diamond */
-.contato_dados h4 {
+.contato-dados h3{
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #4B22AA;
-    font-weight: bold ;
+    color: #fec63e;
+    font-weight: bold;
 }
 
-.contato_dados span {
-    color: #000000; /* adicionando cor na fonte */
+.contato-dados span{
     display: block;
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 30px;
-    font-family: Georgia, 'Times New Roman', serif;
 }
-
-/* even verifica apenas os pares dentro de span */
-.contato_dados span:nth-of-type(even) {
+.contato-dados span:nth-of-type(even){
     margin-bottom: 30px;
-    /* background: blue; verificar apenas os pares */
 }
-
-.contato_dados ul {
+.contato-dados ul{
     margin-top: 10px;
 }
+.contato-dados ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-right: 10px;
 
-/* colar estilo de footer no arquivo style.css */
-.contato_dados ul li {
+}
+
+.contato-dados  ul li {
     display: inline-block;
-    margin-right: 10px; /* mudando de 5px para 10px e left para right*/
+    margin-right: 10px;
+
 }
 
-/* colocando borda de 3px, deixando display block e um padding 3px */
-.contato_dados ul li a {
-    border: 3px solid #4B22AA;
+.contato-dados  ul li a {
+    border: 3PX solid #fec63e;
+    cursor: pointer;
     display: block;
-    padding: 10px; /* mudando de 3px para 10px*/
+    padding: 10px;
 }
 
-/* modificar a borda para branco para saber que é clicável */
-.contato_dados ul li a:hover {
-    border-color: #000000;
+.contato-dados  ul li a:hover {
+    border-color:rgb(68, 66, 66);
 }
-
-/* margem para o mapa e bicicleta */
-.contato_mapa {
+.contato-mapa{
     margin-bottom: 60px;
+}
+.contato-form label{
+    color: black;
 }
